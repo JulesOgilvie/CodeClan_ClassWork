@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Forms Homework</title>
+</head>
+<body>
+    <article>
+        <header>
+            <h1>Quote Request Form</h1>
+        </header>
+
+        <article>
+            <form>
+                <section id="personal-details">
+                    <!--three input fields: full name(text) email(email) phone number (number)-->
+                    <h2>Your Details:</h2>
+
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" placeholder="John Doe" required>               
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="john.doe@email.com" required>               
+                    
+                    <label for="phone-number">Phone Number:</label>
+                    <input type="number" id="phone-number" placeholder="01234 567890" required>               
+                </section>
+
+                <section id="job-types">
+                    <!--check list of job types. Only able to select one option (website, mobile app, ux consultancy)-->
+                    <h2>Job Type:</h2>
+
+                    <input type="radio" id="website" name="job-type" value="website" class="radio">
+                    <label for="website">Website</label>
+
+                    <input type="radio" id="mobile-app" name="job-type" value="mobile-app" class="radio">
+                    <label for="mobile-app">Mobile App</label>
+
+                    <input type="radio" id="ux" name="job-type" value="ux" class="radio">
+                    <label for="ux">UX Consultancy</label>
+
+                    <input type="radio" id="ui" name="job-type" value="ui" class="radio">
+                    <label for="ui">UI Consultancy</label>
+
+                </section>
+
+                <section id="features">
+                    <!--check list of possible features wanted (home page, contact form, booking system, shopping cart, form, chatbot etc)-->
+                    <h2>Features Wanted:</h2>
+
+                    <input type="checkbox" id="home-page" name="home-page">
+                    <label for="home-page">Home Page</label>
+
+                    <input type="checkbox" id="contact-form" name="contact-form">
+                    <label for="contact-form">Contact Form</label>
+
+                    <input type="checkbox" id="webform" name="webform">
+                    <label for="webform">Web Form</label>
+
+                    <input type="checkbox" id="chatbot" name="chatbot">
+                    <label for="chatbot">Chat Bot</label>
+
+                    <input type="checkbox" id="booking" name="booking">
+                    <label for="booking">Booking System</label>
+
+                    <input type="checkbox" id="shopping" name="shopping">
+                    <label for="shopping">Shopping Cart</label>
+
+                    <input type="checkbox" id="navbar" name="navbar">
+                    <label for="navbar">Navigation Bar</label>
+
+                    <input type="checkbox" id="gallery" name="gallery">
+                    <label for="gallery">Image Gallery</label>
+                </section>
+
+                <section id="location">
+                    <!--dropdown box (scotland, england, wales, ireland)-->
+                    <h2>Location:</h2>
+
+                    <label for="location">Your Country:</label>
+                    <input list="countries" id="location" name="location">
+
+                    <datalist id="countries">
+                        <option value="Scotland">Scotland</option>
+                        <option value="England">England</option>
+                        <option value="Wales">Wales</option>
+                        <option value="Ireland">Ireland</option>
+                    </datalist>
+                </section>
+
+                <section id="client-description">
+                    <!--text box that allows client to describe the job they want-->
+                    <h2>Job Description:</h2>
+                    
+                    <textarea id="job-description" name="job-description" rows="5" cols="50" placeholder="Tell us more..."></textarea>
+                </section>
+
+                <!--submit and reset button here-->
+                <section id="buttons"> 
+                    <input type="submit">
+                    <input type="reset">
+                </section>
+            </form>
+        </article>
+    </main>
+
+</body>
+</html>

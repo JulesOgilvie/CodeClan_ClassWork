@@ -1,0 +1,42 @@
+/* take note that CSS uses the American spelling of words */
+
+body {
+    font-family:Helvetica, Arial, sans-serif; /* Gives the text a font (preferred font, backup font, backup font type) */
+    margin: 0; /* adjusts the element margin */
+}
+
+/* targets a child of an element */
+body > footer {
+    /* changes the background colour of an element */
+    background-color: dodgerblue;
+}
+
+body > footer > p {
+    padding: 16px; /* adds a padding to the element box */
+    text-align: center; /* gives the text colour */
+    color: white;
+}
+
+/* target an ID using a # */
+#logo {
+    margin: 0;
+    /* when using imported fonts, they must be surrounded by " */
+    font-family: "Fredoka One", sans-serif;
+}
+
+nav > ul {
+    /* change the style of a list */
+    list-style: none;
+}
+
+nav > ul > li > a{
+    /* change the underline of a link */
+    text-decoration: none;
+}
+
+/* target a class using a . */
+.like-button {
+    background-color: transparent;
+    /* change the border (size, style, colour */
+    border: 1px solid blue;
+}

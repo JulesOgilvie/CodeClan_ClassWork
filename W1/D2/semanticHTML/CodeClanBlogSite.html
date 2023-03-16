@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--html files include a <html> tag that contains all other elements besides the doctype element-->
+<html lang="en"> <!--lang='en' tells the browser the site is in English-->
+
+<!--the <head> tag contains important information that is not displayed on the web page such as SEO and other meta data-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<title> creates a title for the page that CAN be seen in the page tab-->
+    <title>CodeClan Blog Site</title>
+</head>
+<body>
+    <!--<header> creates a header section at the top of the page. Used for the page title/logo and a navigation bar-->
+    <header>
+        <!--align='' is used to align the content to a specific side of the page-->
+        <h1>CodeClan Blog Site</h1>
+        <!--<nav> is used to make a navigation bar-->
+        <nav>
+            <!--<ul> and <ol> create lists with <li> being the list items. <ul> are unorganised lists. <ol> are organised lists-->
+            <ul>
+                <li> 
+                    <!--href='/location' takes you to a page WITHIN the same website-->
+                    <a href="/home">Home</a>
+                </li>
+                <li>
+                    <a href="/about">About</a>
+                </li>
+                <li>
+                    <a href="/blog">Blog</a>
+                </li>
+                <li>
+                    <a href="/contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--<main> creates a section that contains all the main content-->
+    <main>
+        <!--<article> is typically used for the main content within the page-->
+        <article>
+            <header>
+                <h2>Ten Amusing Facts About Kittens</h2>
+                <h3>Read Time: 5 minutes</h3>
+            </header>
+            
+            <main>
+                <!--<p> tags are paragraph tags that allow you to display plain text-->
+                <p>
+                    <!--you can shortcut lorem by typing lorem and pressing tab-->
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ullam ea ipsa cum minus perspiciatis laboriosam eveniet voluptates doloribus ipsum esse rerum, sed iste quaerat soluta, adipisci impedit ut? Saepe.
+                </p>
+
+                <!--<blockquote> creates indented text used for referencing purposes-->
+                <blockquote cite="https://codeclan.com/">
+                    <!--using cite in the blockquote allows you to use <cite> around reference text, allowing it to take you to the reference source-->
+                    "Kittens." - <cite>CodeClan, 2020</cite>
+                </blockquote>
+                <p>
+                    Reprehenderit aliquam quam similique, nostrum ipsam architecto tenetur vero id quisquam possimus corporis quae autem. Officia magnam ratione labore rerum quaerat quibusdam?
+                </p>
+                <p>
+                    Repellat dolore sapiente fugit iste accusamus excepturi atque alias quasi eius ducimus quis sint porro doloribus nulla enim, blanditiis esse adipisci vero.
+                </p>
+                <p>
+                    Et quo minus aliquam nulla consequatur perspiciatis veniam tenetur. Aperiam molestias unde iste reiciendis nesciunt. Placeat minima in libero dolorem amet molestias. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia iure, inventore earum esse tempore repellat ea veniam quas doloremque, accusamus culpa rem quos voluptate adipisci repudiandae voluptates eos obcaecati vitae!
+                </p>
+                <p>
+                    Deserunt totam numquam distinctio illum accusantium rem ratione pariatur doloribus a! Corporis similique possimus dolores natus reiciendis vitae numquam dignissimos aperiam rem!
+                </p>
+            </main>
+            <footer>
+                <!--<img> allows you to insert images to your site using src='linktoyourimage.jpg'. You must include an alt='' to make the image accessible-->
+                <img src="https://i.imgur.com/sOUgMbE.jpeg" alt="a grey kitten">
+                <h2>
+                    Author: A. Cat Jr.
+                </h2>
+                <h3>
+                    Last posted: 2020-01-24
+                </h3>
+                <!--target="_blank" opens the link in a new tab-->
+                <a href="https://codeclan.com/" target="_blank">https://codeclan.com</a>
+            </footer>
+        </article>
+
+        <!--<aside> is used for content that shows on the side of the page-->
+        <aside>
+            <section>
+                <h2>Filter by month</h2>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/blog/months/january">January</a>
+                        </li>
+                        <li>
+                            <a href="/blog/months/february">February</a>
+                        </li>
+                        <li>
+                            <a href="/blog/months/march">March</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section>
+                <h2>Filter by category</h2>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/blog/kittens">Kittens</a>
+                        </li>
+                        <li>
+                            <a href="/blog/cats">Cats</a>
+                        </li>
+                        <li>
+                            <a href="/blog/morekittens">More kittens</a>
+                        </li>
+                        <li>
+                            <a href="/blog/dogs">Dogs</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </aside>
+    </main>
+
+    <!--<footer> creates a footer section at the bottom of a page-->
+    <footer>
+        <h1>CodeClan Blog Site</h1>
+        <!--<div>, <section> and <article> are all semantics. It's good practice to use <div> if you are asigning an ID='' but you can apply an ID to all tags-->
+        <div id="footer-container">
+            <section>
+                <h2>Our site</h2>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/home">Home</a>
+                        </li>
+                        <li>
+                            <a href="/about">About</a>
+                        </li>
+                        <li>
+                            <a href="/blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <h2>Important Files</h2>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/privacy-policy">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="/terms-and-conditions">Terms &amp; Conditions</a>
+                        </li>
+                        <li>
+                            <a href="/cookie-policy">Cookie Policy</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,130 @@
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    font-size: xx-small;
+    text-align: center;
+    color:white;
+
+    background-image: url(https://redwolfeillustrations.com/assets/images/bg.jpg?v=469798b4);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%
+}
+
+header{
+    position: sticky; /* makes the header of the page stay in the same place without needing to adjust main content */
+    top:0; /* for sticky/fixed header to stay at top, top value must be declared */
+    z-index:1;
+
+    background-color:black;
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+
+    padding:10px;
+    height:100px;
+}
+
+main{
+    display:flex;
+    justify-content: space-around;
+    flex-direction:row-reverse;
+
+    margin:10px;
+    margin-left:150px;
+    margin-right:150px;
+}
+
+article {
+    background-color:black;
+    width:50%;
+
+    padding:100px;
+    padding-top:20px;
+}
+
+img{
+    max-width: 50%;
+    height: auto;
+}
+
+#at-a-glance > img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+ul{
+    display: inline-block;
+    list-style: none;
+
+    margin:0;
+    padding:0;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+section > h2{
+    padding:10px;
+}
+table{
+    padding-bottom:10px;
+}
+
+table th, table td{
+    padding:5px;
+}
+
+aside{ 
+    background-color: black;
+    width:20%;
+
+    padding:20px;
+    padding-top: 10px;
+}
+
+footer{
+    bottom:0;
+
+    background-color: black;
+    
+    padding:10px;
+}
+
+a:hover{
+    color:yellow;
+}
+
+.parent>li{
+    display:inline;
+}
+
+.list{
+    text-align:center;
+}
+
+.pet-pics{
+    max-height: 500px;
+    width:auto;
+}
+
+#at-a-glance{
+    position:sticky;
+    top:140px;
+    z-index:0;
+ 
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.red-text, a, th, section > h2, blockquote{
+    color:#BA0606;
+}
