@@ -83,6 +83,7 @@ console.log(lastItem);
 // ---------------------------------------------
 
 // removes first item from an array
+
 shoppingList.shift();
 console.log(shoppingList);*/
 
