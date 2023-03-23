@@ -4,24 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Shopping Site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Punk Wolf</title>
 </head>
-<!--Current progress: Currently trying to get images to work for the nav but all images that have been used so far have been broken. Figuring out what information to add to the website before moving onto CSS. Need to revise the lesson on Terms & conditions, and legal things-->
+<!--Current progress: Currently trying to get images to work for the nav but all images that have been used so far have been broken. Figuring out what information to add to the website before moving onto CSS. Need to revise the lesson on Terms & conditions, and legal things
+
+I want to make th header sticky when scrolling but it shrinks a little when it's not at the top of the page to give the user more reading space-->
 <body>
     <header>
-        <!--heading section contains logo, menu, shopping basket, profile and search bar.-->
+        <!-- logo -->
         <div>
-            <h1>Shopping Site</h1>
-            <nav>
+            <h1>Punk Wolf</h1>
+            <img src="assets/logoblack.svg" alt="Punk Wolf Logo">
+        </div>
+        <!-- main navigation menu -->
+        <div class="navbar">
+            <nav id="content-nav">
                 <ul>
-                    <li>Search</li>
-                    <li>User Profile</li>
-                    <li>Cart</li>
-                    <li>More</li>
+                    <li>Home</li>
+                    <li>Products</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
                 </ul>
             </nav>
-            <nav>
+        </div>
+        <!-- sub-navigation menu for product categories -->
+        <div class="subnav">
+            <nav id="products-dropdown">
                 <ul>
                     <li>Women</li>
                     <li>Men</li>
@@ -32,27 +41,41 @@
                 </ul>
             </nav>
         </div>
-        </section>
+        <!-- search, profile and shopping cart nav -->
+        <div class="navbar">
+            <nav id="user-tools">
+                <ul>
+                    <li>Search</li>
+                    <li>User Profile</li>
+                    <!-- dynamic number of items beside cart icon -->
+                    <li>Cart</li> 
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <!--main section contains introduction to the site, multimedia elements (image and a video?), a form to input a name and a submit button-->
-        <div>
+        <!--main section contains introduction to the site, multimedia elements (image and a video?), hot trends-->
+        <section>
             <!--welcome message-->
             <h2>Welcome to Punk Wolf!</h2>
-            <p>At Punk Wolf we concentrate on making things as affordable as we can as well as providing resources to get the most out of your clothes. If it isn't affordable, it isn't punk!</p>
-        </div>
-        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aperiam expedita placeat harum animi eaque ea enim libero eligendi, velit eum unde nulla voluptatem quia excepturi iure itaque distinctio officia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, natus. Et aliquam natus quas omnis non? Aliquid dolor optio excepturi ullam fugit accusantium, rerum, aspernatur ratione ipsam tenetur cum sunt!</p>
+        </section>
+    </main>
+    <footer>
+        <div id="newsletter">
             <!--input name form-->
+            <h2>Sign up to our Newsletter</h2>
+            <p>Get exclusive discounts and be the first to know about our newest products!</p>
             <form>
-                <label for="name"><h3>Please input your name for a personalised experience!</h3></label><br />
-                <input type="text" id="name" name="name"><br />
-
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="janedoe@email.com"/>
                 <input type="submit" value="Submit">
             </form>
         </div>
-    </main>
-    <footer>
         <!--footer section contains the copyright, information section (sizing, terms of use, Sustainability, Privacy Policy) contact section (contact us, FAQ), accepted payment types and currency-->
+        
     </footer>
 </body>
 </html>
+
+<!-- At Punk Wolf we concentrate on making things as affordable as we can as well as providing resources to get the most out of your clothes. If it isn't affordable, it isn't punk! -- going to put this in the about section instead as it makes more sense -->
