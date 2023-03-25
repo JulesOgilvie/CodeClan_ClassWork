@@ -1,57 +1,34 @@
 body{
     background: #FFEE55;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     width: 100%;
     height: 100%;
 }
 
 header{
-    background: black;
-    padding-top: 20px;
+    background:black;
+    color:white;
+    padding: 2rem;
 
     display:flex;
-    align-content: flex-start;
-}
-.white-text{
-    color: white;
+    justify-content: space-between;
 }
 
-ul{
-    list-style:none;
-}
-
-#header-logo{
-    display:flex;
+#page-title{
     order:1;
+    align-self:center
 }
 
-#website-content-navbar{
-    display:flex;
-    /* flex-direction: column; */
+#site-logo{
+    width: 25%;
+    height:auto;
 }
 
-#user-navbar{
-    display:flex;
+nav{
+    overflow:hidden;
+}
+
+/* #category-nav{
     order:2;
-}
-
-footer{
-    background: black;
-    padding-bottom: 40px;
-
-    display:flex;
-}
-
-#newsletter{
-    display:flex;
-    order:1;
-    flex-direction: column;
-}
-
-#pay-info{
-    display:flex;
-    order:2;
-    flex-direction:column;
-    align-items:flex-end;
-}
+} */

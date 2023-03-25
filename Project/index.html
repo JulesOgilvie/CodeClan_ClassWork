@@ -7,29 +7,34 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Punk Wolf</title>
 </head>
-<!--Current progress: Currently trying to get images to work for the nav but all images that have been used so far have been broken. Figuring out what information to add to the website before moving onto CSS. Need to revise the lesson on Terms & conditions, and legal things
-
-I want to make th header sticky when scrolling but it shrinks a little when it's not at the top of the page to give the user more reading space-->
 <body>
     <header>
         <!-- logo -->
-        <div id="header-logo">
-            <h1 class="white-text">Punk Wolf</h1>
-            <img src="assets/logowhite.svg" alt="Punk Wolf Logo">
+        <div id="page-title">
+            <h1>Punk Wolf</h1>
+            <img src="assets/logowhite.svg" alt="Punk Wolf Logo" id="site-logo">
         </div>
         <!-- main navigation menu -->
-        <section id="wesbite-content-navbar">
-            <nav class="navbar">
-                <ul class="white-text">
-                    <li>Home</li>
-                    <li>Products</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
+        <div id="header-nav">
+            <nav>
+                <ul>
+                    <li href="#home">Home</li>
+                    <li href="#products" class="subnav-root">Products</li>
+                    <li href="blog">Blog</li>
+                    <li href="contact">Contact</li>
+                    <li class="split"><img src="assets/interface-search.png" alt="Search"></li>
+                    <li class="split"><img src="assets/interface-user-single.png" alt="User Profile"></li>
+                    <!-- I want a dynamic number of items beside cart icon -->
+                    <li class="split"><img src="assets/shopping-cart-basket-2.png" alt="Basket"></li> 
                 </ul>
             </nav>
-            <!-- sub-navigation menu for product categories -->
-            <nav class="subnav">
-                <ul class="white-text">
+        </div>
+        
+
+        <!-- product category  bar
+        <div id="category-nav">
+            <nav>
+                <ul>
                     <li>Women</li>
                     <li>Men</li>
                     <li>Children</li>
@@ -38,25 +43,12 @@ I want to make th header sticky when scrolling but it shrinks a little when it's
                     <li>Clearance</li>
                 </ul>
             </nav>
-        </section>
-        
-        <!-- search, profile and shopping cart nav -->
-        <section id="user-navbar">
-            <nav class="navbar">
-                <ul>
-                    <li><img src="assets/interface-search.png" alt="Search"></li>
-                    <li><img src="assets/interface-user-single.png" alt="User Profile"></li>
-                    <!-- I want a dynamic number of items beside cart icon -->
-                    <li><img src="assets/shopping-cart-basket-2.png" alt="Basket"></li> 
-                </ul>
-            </nav>
-        </section>
+        </div> -->
     </header>
 
     <main>
-        <!--main section contains introduction to the site, multimedia elements (image and a video?), hot trends-->
+        <!-- welcome message -->
         <section id="welcome">
-            <!--welcome message-->
             <h2>Welcome to Punk Wolf!</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aperiam expedita placeat harum animi eaque ea enim libero eligendi, velit eum unde nulla voluptatem quia excepturi iure itaque distinctio officia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, natus. Et aliquam natus quas omnis non? Aliquid dolor optio excepturi ullam fugit accusantium, rerum, aspernatur ratione ipsam tenetur cum sunt!</p>
         </section>
@@ -67,10 +59,10 @@ I want to make th header sticky when scrolling but it shrinks a little when it's
         <p>New In - pet bandanas, earrings, shirts</p>
     </main>
     <footer>
+        <!-- newsletter form -->
         <section id="newsletter">
-            <!--input name form-->
-            <h2 class="white-text">Sign up to our Newsletter</h2>
-            <p class="white-text">Get exclusive discounts and be the first to know about our newest products!</p>
+            <h2>Sign up to our Newsletter</h2>
+            <p>Get exclusive discounts and be the first to know about our newest products!</p>
             <form>
                 <label for="email"></label>
                 <input type="email" id="email" name="email" placeholder="janedoe@email.com"/>
@@ -81,8 +73,8 @@ I want to make th header sticky when scrolling but it shrinks a little when it's
         <!-- footer section contains the copyright, information section (sizing, terms of use, Sustainability, Privacy Policy) contact section (contact us, FAQ) accepted payment types and currency -->
         <div id="footer-links">
             <section id="info-links">
-                <h3 class="white-text">Info</h3>
-                <ul class="white-text">
+                <h3>Info</h3>
+                <ul>
                     <li>About Us</li>
                     <li>Sizing</li>
                     <li>Sustainability</li>
@@ -92,8 +84,8 @@ I want to make th header sticky when scrolling but it shrinks a little when it's
             </section>
 
             <section id="helpful-links">
-                <h3 class="white-text">Helpful Links</h3>
-                <ul class="white-text">
+                <h3>Helpful Links</h3>
+                <ul>
                     <li>Contact Us</li>
                     <li>FAQ</li>
                     <li>Stores</li>
@@ -103,20 +95,20 @@ I want to make th header sticky when scrolling but it shrinks a little when it's
         </div>
 
         <section id="pay-info">
-            <h3 class="white-text">Accepted Payment Types</h3>
-            <p class="white-text"> All payments processed via Stripe</p>
-            <ul class="white-text">
+            <h3>Accepted Payment Types</h3>
+            <p> All payments processed via Stripe</p>
+            <ul>
                 <li>Visa</li>
                 <li>MasterCard</li>
                 <li>American Express</li>
             </ul>
             <break></break>
-            <label for="currency" class="white-text"><h3>Select Currency:</label>
+            <label for="currency"><h3>Select Currency:</label>
             <select name="currency" id="currency">
                 <!-- https://w3collective.com/currency-converter-html-javascript/ create options for currencies in js -->
             </select>
         </section>
-    </footer>
+    </footer> 
 </body>
 </html>
 
