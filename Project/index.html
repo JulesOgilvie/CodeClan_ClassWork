@@ -9,27 +9,62 @@
 </head>
 <body>
     <header>
-        <!-- logo -->
-        <div id="page-title">
-            <h1>Punk Wolf</h1>
-            <img src="assets/logowhite.svg" alt="Punk Wolf Logo" id="site-logo">
-        </div>
-        <!-- main navigation menu -->
-        <div id="header-nav">
-            <nav>
-                <ul>
-                    <li href="#home">Home</li>
-                    <li href="#products" class="subnav-root">Products</li>
-                    <li href="blog">Blog</li>
-                    <li href="contact">Contact</li>
-                    <li class="split"><img src="assets/interface-search.png" alt="Search"></li>
-                    <li class="split"><img src="assets/interface-user-single.png" alt="User Profile"></li>
-                    <!-- I want a dynamic number of items beside cart icon -->
-                    <li class="split"><img src="assets/shopping-cart-basket-2.png" alt="Basket"></li> 
-                </ul>
+        <div class="head-wrapper">
+            <!-- main navigation menu -->
+            <div class="header-navigation-left">
+                <nav class="header-nav-container">
+                    <ul class="navbar">
+                        <li class="menu-item">
+                            <a href="/home">Home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="products">Products</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="blog">Blog</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="contact">Contact</a>
+                        </li> 
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- logo -->
+            <div class="header-item-page-title">
+                <a class="logo-store-link" href="/home">
+                    <img src="assets/logowhite.svg" alt="Punk Wolf Logo" class="site-logo">
+                </a>
+                <h1 href="/home" class="site-title">Punk Wolf</h1>
+            </div>
+            
+            <!-- basket, search bar, profile -->
+            <nav id="header-navigation-right">
+                <li class="search-bar-container">
+                    <form class="search-form" name="search" action="/products" method="get" accept-charset="utf8">
+                        <label class="visual" for="search">
+                            Search products
+                        </label>
+                        <input id="search" class="search-input" placeholder="Search..." type="text" autocomplete="off">
+                        <button class="search-button" type="button" label="search-button">
+                            <img src="assets/interface-search.png" alt="Search Button">
+                        </button>
+                    </form>
+                </li>
+                <li class="profile-container">
+                    <a class="view-user-profile" href="/user-profile">
+                        <img src="assets/interface-user-single.png" alt="User Profile">
+                    </a>
+                </li>
+                <!-- I want a dynamic number of items beside cart icon -->
+                <li class="basket-container">
+                    <a class="view-basket" href="/basket">
+                        <img src="assets/shopping-cart-basket-2.png" alt="Basket">
+                        <p class="basket-items">0 Items</p>
+                    </a>
+                </li>
             </nav>
         </div>
-        
 
         <!-- product category  bar
         <div id="category-nav">
@@ -49,65 +84,143 @@
     <main>
         <!-- welcome message -->
         <section id="welcome">
-            <h2>Welcome to Punk Wolf!</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aperiam expedita placeat harum animi eaque ea enim libero eligendi, velit eum unde nulla voluptatem quia excepturi iure itaque distinctio officia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, natus. Et aliquam natus quas omnis non? Aliquid dolor optio excepturi ullam fugit accusantium, rerum, aspernatur ratione ipsam tenetur cum sunt!</p>
+            <div class="welcome-text">
+                <h2 class="welcome-header">Welcome to Punk Wolf!</h2>
+                <h3 class="welcome-subheader">Lorem ipsum dolor sit amet consectetur adipisicing elit. At aperiam expedita placeat harum animi eaque ea enim libero eligendi, velit eum unde nulla!</h3>
+            </div>
+            <script id="repeating-pattern"></script>
         </section>
 
         <!-- going to add images and buttons to these next time I work on this. Focusing now on CSS to get a rough layout -->
-        <p>Trending - list (strappy crop tops, half pattern trousers, utility belts)</p>
-        <p>Deals - platforms discount</p>
-        <p>New In - pet bandanas, earrings, shirts</p>
+        <section class="content">
+            <section id="deals">
+                <div class="section-header-container">
+                    <h2 class="section-header">Deals</h2>
+                </div>
+                <div class="product-list-container">
+                    <div class="product-thumb">
+                        <a class="product-link">
+                            <div class="product-image-container">
+                                <img class="product-image" src="" alt="">
+                                <div class="hover-message">Shop Now</div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-price">
+                                    <p><span class="currency-sign">£</span>4.20<span class="currency-code">GBP</span></p>
+                                </div>
+                                <div class="product-name">
+                                    <p>Product Name</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section id="trending">
+                <div class="section-header-container">
+                    <h2 class="section-header">Trending Now</h2>
+                </div>
+                <div class="product-list-container">
+                    <div class="product-thumb">
+                        <a class="product-link">
+                            <div class="product-image-container">
+                                <img class="product-image" src="" alt="">
+                                <div class="hover-message">Shop Now</div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-price">
+                                    <p><span class="currency-sign">£</span>4.20<span class="currency-code">GBP</span></p>
+                                </div>
+                                <div class="product-name">
+                                    <p>Product Name</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section id="new-in">
+                <div class="section-header-container">
+                    <h2 class="section-header">New In</h2>
+                </div>
+                <div class="product-list-container">
+                    <div class="product-thumb">
+                        <a class="product-link">
+                            <div class="product-image-container">
+                                <img class="product-image" src="" alt="">
+                                <div class="hover-message">Shop Now</div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-price">
+                                    <p><span class="currency-sign">£</span>4.20<span class="currency-code">GBP</span></p>
+                                </div>
+                                <div class="product-name">
+                                    <p>Product Name</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- <p>Trending - list (strappy crop tops, half pattern trousers, utility belts)</p>
+            <p>Deals - platforms discount</p>
+            <p>New In - pet bandanas, earrings, shirts</p> -->
+        </section>
     </main>
     <footer>
-        <!-- newsletter form -->
-        <section id="newsletter">
-            <h2>Sign up to our Newsletter</h2>
-            <p>Get exclusive discounts and be the first to know about our newest products!</p>
-            <form>
-                <label for="email"></label>
-                <input type="email" id="email" name="email" placeholder="janedoe@email.com"/>
-                <input type="submit" value="Submit">
-            </form>
-        </section>
-        
-        <!-- footer section contains the copyright, information section (sizing, terms of use, Sustainability, Privacy Policy) contact section (contact us, FAQ) accepted payment types and currency -->
-        <div id="footer-links">
-            <section id="info-links">
-                <h3>Info</h3>
-                <ul>
-                    <li>About Us</li>
-                    <li>Sizing</li>
-                    <li>Sustainability</li>
-                    <li>Terms & Conditions</li>
-                    <li>Privacy Policy</li>
-                </ul>
-            </section>
+        <div class="wrapper">
+            <!-- footer section contains the copyright, information section (sizing, terms of use, Sustainability, Privacy Policy) contact section (contact us, FAQ) accepted payment types and currency -->
+            <section class="footer-links">
+                <div class="footer-nav">
+                    <h3 class="footer-nav-title">Info</h3>
+                    <ul class="footer-nav-links">
+                        <li>About Us</li>
+                        <li>Sizing</li>
+                        <li>Sustainability</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
 
-            <section id="helpful-links">
-                <h3>Helpful Links</h3>
-                <ul>
-                    <li>Contact Us</li>
-                    <li>FAQ</li>
-                    <li>Stores</li>
-                    <li>Shipping & Returns</li>
-                </ul>
+                <div class="footer-nav">
+                    <h3 class="footer-nav-title">Helpful Links</h3>
+                    <ul class="footer-nav-links">
+                        <li>Contact Us</li>
+                        <li>FAQ</li>
+                        <li>Stores</li>
+                        <li>Shipping & Returns</li>
+                    </ul>
+                </div>
+            </section>
+            <!-- newsletter form -->
+            <section id="newsletter">
+                <h2>Sign up to our Newsletter</h2>
+                <p>Get exclusive discounts and be the first to know about our newest products!</p>
+                <form>
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="janedoe@email.com"/>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+            <section id="pay-info">
+                <div class="payment-types">
+                    <h3>Accepted Payment Types</h3>
+                    <p> All payments processed via Stripe</p>
+                    <ul>
+                        <li>Visa</li>
+                        <li>MasterCard</li>
+                        <li>American Express</li>
+                    </ul>
+                </div>
+
+                <div class="currency-select">
+                    <label for="currency"><h3>Select Currency:</label>
+                    <select name="currency" id="currency">
+                        <!-- https://w3collective.com/currency-converter-html-javascript/ create options for currencies in js -->
+                    </select>
+                </div>
             </section>
         </div>
-
-        <section id="pay-info">
-            <h3>Accepted Payment Types</h3>
-            <p> All payments processed via Stripe</p>
-            <ul>
-                <li>Visa</li>
-                <li>MasterCard</li>
-                <li>American Express</li>
-            </ul>
-            <break></break>
-            <label for="currency"><h3>Select Currency:</label>
-            <select name="currency" id="currency">
-                <!-- https://w3collective.com/currency-converter-html-javascript/ create options for currencies in js -->
-            </select>
-        </section>
     </footer> 
 </body>
 </html>
