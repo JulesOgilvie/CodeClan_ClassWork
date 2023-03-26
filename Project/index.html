@@ -9,11 +9,11 @@
 </head>
 <body>
     <header>
-        <div class="head-wrapper">
+        <div id="head-wrapper">
             <!-- main navigation menu -->
-            <div class="header-navigation-left">
+            <div id="header-navigation-left">
                 <nav class="header-nav-container">
-                    <ul class="navbar">
+                    <ul class="content-navbar">
                         <li class="menu-item">
                             <a href="/home">Home</a>
                         </li>
@@ -31,38 +31,37 @@
             </div>
 
             <!-- logo -->
-            <div class="header-item-page-title">
-                <a class="logo-store-link" href="/home">
-                    <img src="assets/logowhite.svg" alt="Punk Wolf Logo" class="site-logo">
-                </a>
+            <div id="header-page-title">
+                <img src="assets/logowhite.svg" alt="Punk Wolf Logo" class="site-logo" href="/home">
                 <h1 href="/home" class="site-title">Punk Wolf</h1>
             </div>
             
             <!-- basket, search bar, profile -->
             <nav id="header-navigation-right">
-                <li class="search-bar-container">
-                    <form class="search-form" name="search" action="/products" method="get" accept-charset="utf8">
-                        <label class="visual" for="search">
-                            Search products
-                        </label>
-                        <input id="search" class="search-input" placeholder="Search..." type="text" autocomplete="off">
-                        <button class="search-button" type="button" label="search-button">
-                            <img src="assets/interface-search.png" alt="Search Button">
-                        </button>
-                    </form>
-                </li>
-                <li class="profile-container">
-                    <a class="view-user-profile" href="/user-profile">
-                        <img src="assets/interface-user-single.png" alt="User Profile">
-                    </a>
-                </li>
-                <!-- I want a dynamic number of items beside cart icon -->
-                <li class="basket-container">
-                    <a class="view-basket" href="/basket">
-                        <img src="assets/shopping-cart-basket-2.png" alt="Basket">
-                        <p class="basket-items">0 Items</p>
-                    </a>
-                </li>
+                <ul class="search-cart-nav">    
+                    <li class="search-container">
+                        <form class="search-form" name="search" action="/products" method="get" accept-charset="utf8">
+                            <label class="visual" for="search">
+                                Search products
+                            </label>
+                            <input id="search" class="search-input" placeholder="Search..." type="text" autocomplete="off">
+                            <button class="search-button" type="button" label="search-button">
+                                <img src="assets/interface-search.png" alt="Search Button">
+                            </button>
+                        </form>
+                    </li>
+                    <li class="menu-item">
+                        <a class="view-user-profile" href="/user-profile">
+                            <img src="assets/interface-user-single.png" alt="User Profile">
+                        </a>
+                    </li>
+                    <!-- I want a dynamic number of items beside cart icon -->
+                    <li class="menu-item">
+                        <a class="view-basket" href="/basket">
+                            <img src="assets/shopping-cart-basket-2.png" alt="Basket">
+                            <p class="basket-items">0 Items</p>
+                        </a>
+                    </li>
             </nav>
         </div>
 

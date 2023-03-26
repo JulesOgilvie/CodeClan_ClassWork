@@ -10,3 +10,136 @@ header, footer{
     background-color:black;
     color:white;
 }
+
+header{
+    border-bottom:2px solid #FFEE55;
+    height: 140px;
+    font-size:14px;
+    width:100%;
+    z-index:5;
+    position:fixed;
+    top:0;
+}
+
+.head-wrapper{
+    display:flex;
+    align-content:flex-start;
+}
+
+.content-navbar{
+    margin:0;
+    padding:0;
+    list-style:none;
+    display:flex;
+    align-items: center;
+    justify-content:flex-start;
+    font-size:14px;
+    width:33%;
+    text-align:left;
+    text-transform:uppercase;
+}
+
+.menu-item{
+    margin:0 8px;
+    position:relative;
+}
+
+.menu-item > a{
+    color:white;
+    padding:12px 10px;
+    position:relative;
+    display:flex;
+    align-items: center;
+    text-decoration:none;
+}
+
+#header-page-title{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    padding:0 64px;
+    text-align:center;
+}
+
+.site-logo{
+    width: 10%;
+    max-height:auto;
+    padding: 10px 0;
+}
+
+.site-title{
+    font-size:64px;
+    padding: 1rem;
+}
+
+#header-navigation-right{
+    position:relative;
+    text-align:right;
+    text-transform:uppercase;
+}
+
+.search-cart-nav{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.view-basket{
+    display:flex;
+    align-items:center;
+    padding:4px 8px;
+}
+
+.view-basket img{
+    height:16px;
+    margin:0 10px;
+    position:relative;
+    width:16px;
+}
+
+.search-container{
+    transition:width 0.35s;
+    position:relative;
+}
+
+.search-form{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    position:relative;
+}
+
+.search-input{
+    transition:all 0.25s;
+    appearance:none;
+    border:0;
+    background:none;
+    color:white;
+    padding:6px;
+    width:0;
+}
+
+.search-input:hover{
+    width:150px;
+}
+
+.search-button{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:transparent;
+    border:none;
+    height: 24px;
+    padding:0;
+    width: 24px;
+}
+
+.search-button img{
+    display:block;
+    height:16px;
+    width:16px;
+}
