@@ -19,127 +19,90 @@ header{
     z-index:5;
     position:fixed;
     top:0;
+    display:inline-flex;
+    flex-direction:row;
 }
 
-.head-wrapper{
+#head-wrapper{
     display:flex;
-    align-content:flex-start;
+    flex-direction:row;
+    justify-content:space-between;
 }
 
-.content-navbar{
-    margin:0;
-    padding:0;
+#header-navigation-left{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+ul{
     list-style:none;
     display:flex;
-    align-items: center;
-    justify-content:flex-start;
-    font-size:14px;
-    width:33%;
-    text-align:left;
+    flex-direction:row;
+    justify-content:space-between;
     text-transform:uppercase;
+    color:white;
 }
 
 .menu-item{
-    margin:0 8px;
-    position:relative;
+    margin:0 10px;
+    display:flex;
+    justify-content:space-between;
 }
 
-.menu-item > a{
-    color:white;
-    padding:12px 10px;
-    position:relative;
-    display:flex;
-    align-items: center;
+.menu-item a{
     text-decoration:none;
+    color:white;
 }
 
 #header-page-title{
     display:flex;
-    justify-content:center;
+    flex-direction:row;
     align-items:center;
-    color:white;
-    padding:0 64px;
-    text-align:center;
+    justify-content:center;
+    margin:0 30px;
 }
 
 .site-logo{
-    width: 10%;
-    max-height:auto;
-    padding: 10px 0;
+    max-width:auto;
+    max-height:60px;
 }
-
 .site-title{
-    font-size:64px;
-    padding: 1rem;
+    font-size:45px;
 }
 
-#header-navigation-right{
-    position:relative;
-    text-align:right;
-    text-transform:uppercase;
-}
-
-.search-cart-nav{
+#site-navigation-right{
     display:flex;
-    justify-content:flex-end;
+    flex-direction:row;
     align-items:center;
-    list-style:none;
-    margin:0;
-    padding:0;
-}
-
-.view-basket{
-    display:flex;
-    align-items:center;
-    padding:4px 8px;
-}
-
-.view-basket img{
-    height:16px;
-    margin:0 10px;
-    position:relative;
-    width:16px;
-}
-
-.search-container{
-    transition:width 0.35s;
-    position:relative;
 }
 
 .search-form{
     display:flex;
+    flex-direction:row;
     align-items:center;
-    justify-content:flex-end;
-    position:relative;
 }
 
 .search-input{
-    transition:all 0.25s;
-    appearance:none;
-    border:0;
-    background:none;
+    background:transparent;
     color:white;
-    padding:6px;
-    width:0;
-}
-
-.search-input:hover{
+    border:white 1px solid;
+    height: 2rem;
     width:150px;
 }
 
 .search-button{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:transparent;
+    background:none;
     border:none;
-    height: 24px;
-    padding:0;
-    width: 24px;
 }
 
 .search-button img{
-    display:block;
-    height:16px;
-    width:16px;
+    height:20px;
+    width:20px;
+    background:transparent;
+}
+
+.view-user-profile img{
+    width:20px;
+    height:20px
 }
