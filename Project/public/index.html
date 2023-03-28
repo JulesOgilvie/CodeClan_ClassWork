@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Punk Wolf</title>
+</head>
+<body>
+    <header>
+        <div id="head-wrapper">
+            <!-- main navigation menu -->
+            <div id="header-navigation-left">
+                <nav class="header-nav-container">
+                    <ul class="content-navbar">
+                        <li class="menu-item">
+                            <a href="/home">Home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="products">Products</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="blog">Blog</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="contact">Contact</a>
+                        </li> 
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- logo -->
+            <div id="header-page-title">
+                <img src="assets/logowhite.svg" alt="Punk Wolf Logo" class="site-logo" href="/home">
+                <h1 href="/home" class="site-title">Punk Wolf</h1>
+            </div>
+            
+            <!-- basket, search bar, profile -->
+            <nav id="header-navigation-right">
+                <ul class="search-cart-nav">    
+                    <li class="search-container">
+                        <form class="search-form" name="search" action="/products" method="get" accept-charset="utf8">
+                            <label class="visual" for="search">
+                                <!-- Search products -->
+                            </label>
+                            <input id="search" class="search-input" placeholder="Search..." type="text" autocomplete="off">
+                            <button class="search-button" type="button" label="search-button">
+                                <div class="figure">
+                                    <img src="assets/interface-search-white.png" alt="Search Button" class="image-main">
+                                    <img src="assets/interface-search-red.png" alt="User Profile" class="image-hover">
+                                </div>
+                            </button>
+                        </form>
+                    </li>
+                    <li class="menu-item">
+                        <a class="view-user-profile" href="/user-profile">
+                            <div class="figure">
+                                <img src="assets/interface-user-single-white.png" alt="User Profile" class="image-main">
+                                <img src="assets/interface-user-single-red.png" alt="User Profile" class="image-hover">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- I want a dynamic number of items beside cart icon -->
+                    <li class="menu-item">
+                        <a class="view-basket" href="/basket">
+                            <div class="figure">
+                                <img src="assets/shopping-basket-white.png" alt="Basket" class="image-main">
+                                <img src="assets/shopping-basket-red.png" alt="Basket" class="image-hover"> 
+                            </div>
+                            <p class="basket-items">0 Items</p>
+                        </a>
+                    </li>
+            </nav>
+        </div>
+
+        <!-- product category  bar
+        <div id="category-nav">
+            <nav>
+                <ul>
+                    <li>Women</li>
+                    <li>Men</li>
+                    <li>Children</li>
+                    <li>Accessories</li>
+                    <li>DIY</li>
+                    <li>Clearance</li>
+                </ul>
+            </nav>
+        </div> -->
+    </header>
+
+    <main>
+        <!-- welcome message -->
+        <section id="welcome">
+            <div class="welcome-text">
+                <h2 class="welcome-header">Welcome to Punk Wolf!</h2>
+                <h3 class="welcome-subheader">Lorem ipsum dolor sit amet consectetur adipisicing elit. At aperiam expedita placeat harum animi eaque ea enim libero eligendi, velit eum unde nulla!</h3>
+            </div>
+            <script id="repeating-pattern"></script>
+        </section>
+
+        <!-- going to add images and buttons to these next time I work on this. Focusing now on CSS to get a rough layout -->
+        <section class="content">
+            <section id="deals">
+                <div class="section-header-container">
+                    <h2 class="section-header">Deals</h2>
+                </div>
+                <div class="product-list-container">
+                    <div class="product-thumb"id="tshirt-deal">
+                        <a class="product-link">
+                            <div class="product-image-container">
+                                <img class="product-image" src="assets/tshirts.png" alt="t-shirt with the text 'short' and an emoticon smiley face">
+                                <div class="hover-message">Shop Now</div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-price">
+                                    <p><span class="currency-sign">£</span>10.00<span class="currency-code">GBP</span></p>
+                                </div>
+                                <div class="product-name">
+                                    <p>T-Shirts</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section id="trending">
+                <div class="section-header-container">
+                    <h2 class="section-header">Trending Now</h2>
+                </div>
+                <div class="product-list-container">
+                    <div class="product-thumb" id="earrings-trending">
+                        <a class="product-link">
+                            <div class="product-image-container">
+                                <img class="product-image" src="assets/earrings.png" alt="selection of earrings">
+                                <div class="hover-message">Shop Now</div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-price">
+                                    <p><span class="currency-sign">£</span>4.20<span class="currency-code">GBP</span></p>
+                                </div>
+                                <div class="product-name">
+                                    <p>Product Name</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section id="new-in">
+                <div class="section-header-container">
+                    <h2 class="section-header">New In</h2>
+                </div>
+                <div class="product-list-container">
+                    <div class="product-thumb" id="pet-bandana-newin">
+                        <a class="product-link">
+                            <div class="product-image-container">
+                                <img class="product-image" src="assets/petbandana.png" alt="a unicorn wearing a bandana that says 'killer">
+                                <div class="hover-message">Shop Now</div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-price">
+                                    <p><span class="currency-sign">£</span>46.50<span class="currency-code">GBP</span></p>
+                                </div>
+                                <div class="product-name">
+                                    <p>Pet Bandanas</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <!-- footer section contains the copyright, information section (sizing, terms of use, Sustainability, Privacy Policy) contact section (contact us, FAQ) accepted payment types and currency -->
+            <section class="footer-links">
+                <div class="footer-nav">
+                    <h3 class="footer-nav-title">Info</h3>
+                    <ul class="footer-nav-links">
+                        <li>About Us</li>
+                        <li>Sizing</li>
+                        <li>Sustainability</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav">
+                    <h3 class="footer-nav-title">Helpful Links</h3>
+                    <ul class="footer-nav-links">
+                        <li>Contact Us</li>
+                        <li>FAQ</li>
+                        <li>Stores</li>
+                        <li>Shipping & Returns</li>
+                    </ul>
+                </div>
+            </section>
+            <!-- newsletter form -->
+            <section id="newsletter">
+                <h2>Sign up to our Newsletter</h2>
+                <p>Get exclusive discounts and be the first to know about our newest products!</p>
+                <form>
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="janedoe@email.com"/>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+            <section id="pay-info">
+                <div class="payment-types">
+                    <h3>Accepted Payment Types</h3>
+                    <p> All payments processed via Stripe</p>
+                    <ul>
+                        <li>Visa</li>
+                        <li>MasterCard</li>
+                        <li>American Express</li>
+                    </ul>
+                </div>
+
+                <div class="currency-select">
+                    <label for="currency"><h3>Select Currency:</label>
+                    <select name="currency" id="currency">
+                        <!-- https://w3collective.com/currency-converter-html-javascript/ create options for currencies in js -->
+                    </select>
+                </div>
+            </section>
+        </div>
+    </footer> 
+</body>
+</html>
+
+<!-- At Punk Wolf we concentrate on making things as affordable as we can as well as providing resources to get the most out of your clothes. If it isn't affordable, it isn't punk! -- going to put this in the about section instead as it makes more sense -->
