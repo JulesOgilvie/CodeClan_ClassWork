@@ -64,25 +64,6 @@ ul{
     color:red;
 }
 
-
-.figure img.image-hover {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    object-fit: contain;
-    opacity: 0;
-}
-
-.search-button:hover img.image-hover {
-    opacity:1;
-}
-
-.menu-item a:hover img.image-hover {
-    opacity:1;
-}
-
 #header-page-title{
     display:flex;
     flex-direction:row;
@@ -143,6 +124,24 @@ ul{
     align-items:center;
     width:20px;
     height:20px;
+}
+
+.figure img.image-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+}
+
+.menu-item a:hover img.image-hover {
+    opacity:1;
+}
+
+.search-button:hover img.image-hover {
+    opacity:1;
 }
 
 .view-basket{
