@@ -20,7 +20,7 @@ header{
     font-size:14px;
     width:100%;
     z-index:5;
-    position:fixed;
+    position:sticky;
     top:0;
     display:inline-flex;
     flex-direction:row;
@@ -131,12 +131,16 @@ ul{
 }
 
 .figure{
+    display:flex;
+    align-items:center;
     position:relative;
     margin:0 10px;
     background:transparent;
 }
 
 .figure img{
+    display:flex;
+    align-items:center;
     width:20px;
     height:20px;
 }
