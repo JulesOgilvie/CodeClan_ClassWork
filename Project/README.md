@@ -1,7 +1,7 @@
 PunkWolf shopping site plan:
 
 overview:
-shopping website for the brand Punk Wolf. Sells clothes and clothing DIY materials at an affordable price. Target audience is those within the punk/alt/lgbt community looking to find affordable clothes that wont break the bank along with materials to maintain and customise their clothes.
+shopping website for the brand Punk Wolf. Sells clothes and clothing DIY materials at an affordable price. Target audience is those within the punk/alt/lgbt community looking to find affordable clothes that wont break the bank along with materials to maintain and customise their clothes. I want things to be easily accessible as a lot of people in the communities I want to use my site have disabilities. Using HTML to contain all of the info, CSS to style things, JavaScript to do all the cool animation bits and form things, and EXPRESS to test the site as I work
 
 Pages:
 Home
