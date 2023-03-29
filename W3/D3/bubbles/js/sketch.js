@@ -1,6 +1,5 @@
 // set up the variable bubbles
 let bubbles; 
-let spring;
 
 // function setup. Sets up the canvas, bubbles, and for loop to produce multiple bubbles
 function setup(){
