@@ -6,6 +6,7 @@ body{
     padding: 0px;
     width: 100%;
     height: 100%;
+    text-align: center;
 }
 
 header, footer{
@@ -108,6 +109,7 @@ h1, h2, h3, h4, h5, h6{
     border:white 1px solid;
     height: 2rem;
     width:150px;
+    font-family:'Cutive Mono', Helvetica, sans-serif;
 }
 
 .search-button{
@@ -162,17 +164,57 @@ h1, h2, h3, h4, h5, h6{
     white-space:nowrap;
 }
 
-/* header{
-    border-bottom:2px solid #FFEE55;
-    height: 140px;
-    font-size:14px;
-    width:100%;
-    z-index:5;
-    position:sticky;
-    top:0;
-    display:inline-flex;
-    flex-direction:row;
-} */
+.product-list-container{
+    margin:0;
+    padding:50px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:nowrap;
+}
+
+.product-thumb{
+    background:black;
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    height: 400px;
+    width: 300px;
+    padding:25px;
+    margin:0;
+}
+
+.product-info{
+    margin:0;
+    padding: 20px;
+    display:flex;
+    justify-content:space-around;
+    align-content:center;
+    flex-direction:column;
+}
+
+.product-image-container{
+    position:relative;
+    width:250px;
+    height:250px;
+}
+
+.product-image-container img{
+    position:relative;
+    width:250px;
+    height: 250px;
+    object-fit:cover;
+}
+
+.product-image-container .product-button{
+    position:relative;
+    width:50px;
+    height:25px;
+    text-align:center;
+    opacity:0;
+    transition: opacity .35s ease;
+    display:flex;
+    align-self: center;
+}
 
 footer{
     border-top:2px solid #FFEE55;
@@ -185,17 +227,122 @@ footer{
     justify-content:center;
 }
 
+footer .wrapper{
+    margin:30px;
+    padding:0;
+}
+
 .footer-links{
     display:flex;
-    justify-content: flex-start;
+    justify-content: space-around;
 }
 
 footer nav{
     display:flex;
     flex-direction:column;
+    align-items:center;
+    list-style:none;
 }
 
-.welcome-background-svg{
-    background-color: #770c8c;
-    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg%27%3E%3Ctitle%3Ehoundstooth%3C/title%3E%3Cg fill='%23000000' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M0 18h6l6-6v6h6l-6 6H0M24 18v6h-6M24 0l-6 6h-6l6-6M12 0v6L0 18v-6l6-6H0V0'/%3E%3C/g%3E%3C/svg%3E");
+main{
+    display:flex;
+    justify-content:space-around;
+    flex-direction:column;
 }
+
+#welcome{
+    height:500px;
+    padding: 0px;
+    background-image: url(https://qo36xw.am.files.1drv.com/y4mDKejMs3faQ4Ko9nBg5Z1Jm6J-VPakUfQqqRG8x6au6ivvDMeo8U0Ybw6UpM203jhi35p-zplar7x3vsmMKUu7DHX7IAnXW-knVUiL8b6jeBguz9vCO418AIYYVtXSlWykrOVLeWojP5XXrbcpmKg_aKCvelnLxe-oJHHsUzENG1pmfCueSSc2iDaKSzjCn3sKf6uXDcXUpk_9uWzZRPqYQ);
+    background-repeat:no-repeat;
+    display:flex;
+    justify-content:center;
+}
+
+.welcome-text{
+    margin-top:125px;
+    position:relative;
+    background:black;
+    border:2px #FFEE55 solid;
+    padding: 20px;
+    height: 180px;
+    width:40%;
+    display:flex;
+    flex-direction:column;
+    align-content:center;
+    justify-content:center;
+}
+.section-header-container{
+    display:flex;
+    justify-content:center;
+}
+.section-header{
+    margin: 25px;
+    padding:20px;
+    width:220px;
+    background:black;
+    border:2px #FFEE55 solid;
+    display:flex;
+    justify-content:center;
+}
+
+.email-input{
+    background:transparent;
+    color:white;
+    border:white 1px solid;
+    height: 2rem;
+    width:150px;
+    font-family:'Cutive Mono', Helvetica, sans-serif;
+}
+
+.email-submit{
+    background:transparent;
+    border:white 1px solid;
+    color:white;
+    height: 30px;
+    font-family:'Cutive Mono', Helvetica, sans-serif;
+}
+
+.email-submit:hover{
+    color:red;
+}
+
+footer ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.payment-types ul{
+    display:flex;
+    justify-content:center;
+}
+
+footer ul li{
+    padding:5px;
+}
+
+footer ul li:hover{
+    color:red; 
+}
+
+.payment-types img{
+    max-height:30px;
+    max-width: 30px;
+}
+
+#newsletter{
+    width:400px;
+}
+
+.helpful-links{
+    margin-left:20px;
+}
+/* .welcome-background img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 500px;
+    object-fit:cover;
+} */

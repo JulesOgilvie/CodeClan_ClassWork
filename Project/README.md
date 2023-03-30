@@ -18,20 +18,19 @@ To get the project running using Express, you need to use npm run server:dev. Fr
 
 ### Task: A short paragraph to describe how the project was planned
 
-How did you plan your app? Describe the steps you took to plan your app and include any photos or screenshots of planning you did. This may be photos of sketches you did, personas, trello boards, MOSCOW boards or something else. 
-
-The steps taken to plan this app 
+To plan my project I thought about the personas of people who may potentially use my site and created several different variations of wire-frames until I reached one I liked. I kept my to-do list in my notebook as well as leaving myself notes in my code to remind myself of where I left of and what I intended to add.  
 
 ------------------------------------------------------------------------------------
 
 ## Wireframes
 
+This is the final wire-frame that I ended up using to base my project on
+
+![an image of the project wireframe](public/assets/wireframe.jpg)
 
 ------------------------------------------------------------------------------------
 
 ## SEO
-
-> my keywords are relevant to the audience I want to attract and include: 
 
 > Links do technically work but have no pages to go to. Without these places existing the links lead to nowhere.
 
@@ -55,26 +54,7 @@ The steps taken to plan this app
 ------------------------------------------------------------------------------------
 
 ## UX and Accessibility
-
-### Task: A list that shows how your website meets accessibility guidelines, and which design principles were considered durng planning.
-
-Talk about which UX and Accessibility principles you considered whilst making this project. Try to provide at least 2 or 3 examples for each. You can find links to relevant reading material, including the slides from the UX presentation is on Slack, but here is a list of a few sample examples to provide some inspiration:
-
-- Did you create persona(s) to help you understand who the users of your product would be? What design decisions did you make based on the persona(s) you used? Include some pictures of the persona/s if you haven't done so already.
-- What design patterns did you use, and why? (Remember [www.ui-patterns.com](www.ui-patterns.com))
-- What design principles did you use? How did you implement them? 
-- Have you ensured all your images have appropriate alt attributes?
-- Have you ensured there is sufficient contrast between the text colour and the background behind it?
-- Have you ensured the fonts are large enough on all devices?
-- Are you using a type-face that is dyslexia friendly?
-- Have you used aria tags in your HTML?
-- Have you tested how your site is presented to screenreaders to ensure a good user experience?
-- Have you avoided features like auto-playing videos, pop ups and large file sizes?
-- Can you navigate your project successfully using the keyboard alone?
-- Are your links and 'touch points' far enough apart that users don't accidentally click adjacent elements by accident?
-
-------------------------------------------------------------------------------------
-
+  
 > To help me understand the userbase I created personas that I felt represented users who would use my site
    --add image here. Need to take pictures as drawn physically--
 
